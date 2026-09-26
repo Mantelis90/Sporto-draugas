@@ -1,0 +1,18 @@
+# .NET build output
+**/bin/
+**/obj/
+
+# Editor settings
+.vs/
+.idea/
+*.user
+
+# Local secrets
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+
+# Tests and local database files
+TestResults/
+mysql-data/
