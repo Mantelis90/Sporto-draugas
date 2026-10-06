@@ -83,3 +83,21 @@ ar jie susirado partnerį, susitiko sportuoti ir norėtų tai pakartoti.
 
 Vien registracijų ar skelbimų skaičius dar neparodo, kad programėlė
 padeda žmonėms pradėti sportuoti.
+
+## Projekto paleidimas
+
+### Reikalavimai
+
+- .NET 10 SDK
+- Git
+
+### Paleidimas
+
+Atkurti projekto priklausomybes:
+
+```bash
+dotnet restore src/SportoDraugas.Api
+
+dotnet build src/SportoDraugas.Api
+
+dotnet run --project src/SportoDraugas.Api --launch-profile http
